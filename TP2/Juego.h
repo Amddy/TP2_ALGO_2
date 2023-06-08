@@ -51,6 +51,7 @@ private:
     void pedirDimensionesJuego(int,int,unsigned int * dimensiones);
     unsigned int pedirCantidadCartasPorJugador() ;
     funcion_t getFuncionalidad(unsigned int indice);
+    jugador* validarSiHayGanador(Lista<Jugador*> *jugadores);
 
 
 

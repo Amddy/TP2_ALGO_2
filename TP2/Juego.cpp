@@ -217,6 +217,30 @@ funcion_t Juego::getFuncionalidad(unsigned int indice){
     throw "Numero de carta no valido";
 }
 
+jugador* Juego::validarSiHayGanador(Lista<Jugador*> *jugadores){
+    if(jugadores==NULL){
+        throw "La lista de jugadores esta vacia";
+    }
+    bool hayGanador=false;
+    int cantidadGanadores= 0;
+    jugador* ganador=NULL;
+    
+    jugadores->iniciarCursor();
+    while(jugadores->avanzarCursor()){
+        if(jugadores->obtenerCursor()->getCantidadFichas() !=0){
+            cantidadGanadores
+        s++;
+            ganador==jugadores->obtenerCursor();
+        }
+    }
+    if(hayGanador && cantidadGanadores==1){
+        return ganador;
+    }
+
+    return NULL;
+}
+
+
 
 
     

@@ -223,8 +223,8 @@ jugador* Juego::validarSiHayGanador(Lista<Jugador*> *jugadores){
     }
     bool hayGanador=false;
     int cantidadGanadores= 0;
-    jugador* ganador=NULL;
-    
+    Jugador* ganador=NULL;
+
     jugadores->iniciarCursor();
     while(jugadores->avanzarCursor()){
         if(jugadores->obtenerCursor()->getCantidadFichas() !=0){
